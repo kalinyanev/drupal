@@ -524,7 +524,7 @@ function install_select_locale($profilename) {
   if (count($locales) == 1) {
     if ($profilename == 'default') {
       install_task_list('locale-select');
-      drupal_set_title(st('Choose language'));
+      drupal_set_title(st('Choose language 1'));
       if (!empty($_GET['localize'])) {
         $output = '<p>'. st('With the addition of an appropriate translation package, this installer is capable of proceeding in another language of your choice. To install and use Drupal in a language other than English:') .'</p>';
         $output .= '<ul><li>'. st('Determine if <a href="@translations" target="_blank">a translation of this Drupal version</a> is available in your language of choice. A translation is provided via a translation package; each translation package enables the display of a specific version of Drupal in a specific language. Not all languages are available for every version of Drupal.', array('@translations' => 'http://drupal.org/project/translations')) .'</li>';
@@ -568,7 +568,7 @@ function install_select_locale($profilename) {
 
     install_task_list('locale-select');
 
-    drupal_set_title(st('Choose language'));
+    drupal_set_title(st('Choose language 1'));
     print theme('install_page', drupal_get_form('install_select_locale_form', $locales));
     exit;
   }
